@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    /* background-image: url(https://img.freepik.com/free-photo/autumn-night-illuminated-lantern-tree-yellow-leaf-generated-by-ai_188544-15642.jpg?w=900&t=st=1713119494~exp=1713120094~hmac=9d4d32530c9eb1933ec56ef56f89a669d204266a4071108fbe2f0a7df1fd8ad7); */
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+
+.form-box{
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: white;
+    padding: 50px 60px 70px;
+    text-align: center;
+    backdrop-filter: blur(0.1px); 
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+
+.form-box h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: grey;
+    position: relative;
+}
+
+.form-box h1::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background:grey;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translate(-50%);
+    
+}
+
+.input-field{
+    background:  white;
+    border:1px solid grey ;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+
+.input-field i{
+    margin-left: 15px;
+    color: #191919;
+}
+
+form p{
+    text-align: left;
+    font-size: 13px;
+}
+
+form p a{
+    text-decoration: none;
+    color: white;
+}
+
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+ button{
+    flex-basis: 48%;
+    background: #e1a409;
+    color:white;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+button:hover {
+    background: #67686a;
+  } 
+   
+#namefield{
+    display: none;
+}
+.input-group{
+    height: 280px;
+}
+
+/* .btn-field button.disable{
+    background-color: hsl(28, 100%, 58%); 
+   color:  white  ;
+}   */
+
+ /* #LoginBtn {
+    background-color: #392f24;
+    color: white;
+  }
+
+  #SignupBtn {
+    background-color:white;
+    color: #392f24; 
+  }  */
+  
