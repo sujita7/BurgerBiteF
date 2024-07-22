@@ -3,7 +3,7 @@
   <br />
   <br />
 
-  <h2 align="center">Foodie - Fast food website</h2>
+  <h2 align="center">BurgerBite. - Fast food website</h2>
 
   BurgerBite. is a fully responsive fast food website, <br />Responsive for all devices, build using HTML, CSS, and JavaScript.
 
