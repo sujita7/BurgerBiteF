@@ -32,7 +32,12 @@ LoginBtn.addEventListener('click', function() {
     })
     .then(data => {
         console.log('Data received:', data);
-        alert(data.message);
+        if (data.error) {
+            alert(data.error);
+        } else {
+            alert(data.name);
+            window.location.href = '../main.html';
+        }
     })
     .catch(error => {
         console.error('Error:', error);
@@ -63,12 +68,17 @@ SignupBtn.addEventListener('click', function() {
         body: JSON.stringify({ name, email, password })
     })
     .then(response => {
-        console.log('Response received:', response);
+        console.log('Response received:', response.status);
         return response.json();
     })
     .then(data => {
         console.log('Data received:', data);
-        alert(data.message);
+        if (data.error) {
+            alert(data.error);
+        } else {
+            alert(data.name);
+            window.location.href = 'main.html'; // Replace with your next screen URL
+        }
     })
     .catch(error => {
         console.error('Error:', error);
