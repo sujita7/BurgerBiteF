@@ -19,7 +19,7 @@ LoginBtn.addEventListener('click', function() {
     console.log('Login button clicked');
     console.log('Sending login request to API with:', { email, password });
 
-    fetch('http://localhost:8000/login', {
+    fetch('https://burgerbite-pucc.onrender.com/login', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -60,7 +60,7 @@ SignupBtn.addEventListener('click', function() {
     console.log('Signup button clicked');
     console.log('Sending signup request to API with:', { name, email, password });
 
-    fetch('http://localhost:8000/signup', {
+    fetch('https://burgerbite-pucc.onrender.com/signup', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
